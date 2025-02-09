@@ -14,12 +14,6 @@ importers:
       '@tailwindcss/forms':
         specifier: ^0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
-      '@tanstack/react-query':
-        specifier: ^5.65.1
-        version: 5.65.1(react@19.0.0)
-      '@tanstack/react-query-devtools':
-        specifier: ^5.65.1
-        version: 5.65.1(@tanstack/react-query@5.65.1(react@19.0.0))(react@19.0.0)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -47,9 +41,6 @@ importers:
       react-dom:
         specifier: latest
         version: 19.0.0(react@19.0.0)
-      react-toastify:
-        specifier: ^11.0.3
-        version: 11.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
@@ -75,9 +66,6 @@ importers:
       '@types/react-dom':
         specifier: 19.0.3
         version: 19.0.3(@types/react@19.0.7)
-      '@types/react-toastify':
-        specifier: ^4.1.0
-        version: 4.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
 packages:
 
@@ -319,23 +307,6 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20 || >= 4.0.0-beta.1'
 
-  '@tanstack/query-core@5.65.0':
-    resolution: {integrity: sha512-Bnnq/1axf00r2grRT6gUyIkZRKzhHs+p4DijrCQ3wMlA3D3TTT71gtaSLtqnzGddj73/7X5JDGyjiSLdjvQN4w==}
-
-  '@tanstack/query-devtools@5.65.0':
-    resolution: {integrity: sha512-g5y7zc07U9D3esMdqUfTEVu9kMHoIaVBsD0+M3LPdAdD710RpTcLiNvJY1JkYXqkq9+NV+CQoemVNpQPBXVsJg==}
-
-  '@tanstack/react-query-devtools@5.65.1':
-    resolution: {integrity: sha512-PKUBz7+FAP3eI1zoWrP5vxNQXs+elPz3u/3cILGhNZl2dufgbU9OJRpbC+BAptLXTsGxTwkAlrWBIZbD/c7CDw==}
-    peerDependencies:
-      '@tanstack/react-query': ^5.65.1
-      react: ^18 || ^19
-
-  '@tanstack/react-query@5.65.1':
-    resolution: {integrity: sha512-BSpjo4RQdJ75Mw3pqM1AJYNhanNxJE3ct7RmCZUAv9cUJg/Qmonzc/Xy2kKXeQA1InuKATSuc6pOZciWOF8TYQ==}
-    peerDependencies:
-      react: ^18 || ^19
-
   '@types/bcrypt@5.0.2':
     resolution: {integrity: sha512-6atioO8Y75fNcbmj0G7UjI9lXN2pQ/IGJ2FWT4a/btd0Lk9lQalHLKhkgKVZ3r+spnmWUKfbMi1GEe9wyHQfNQ==}
 
@@ -349,10 +320,6 @@ packages:
     resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
     peerDependencies:
       '@types/react': ^19.0.0
-
-  '@types/react-toastify@4.1.0':
-    resolution: {integrity: sha512-u7Ie/7LHBsPVz/iJxi/WlRDS7Gh9csCJACTDXx+pSLuZCm94xpkwzhM3jV1L5ZxP/in0Gp2tFbJ91VrSGr1gyQ==}
-    deprecated: This is a stub types definition. react-toastify provides its own type definitions, so you do not need this installed.
 
   '@types/react@19.0.7':
     resolution: {integrity: sha512-MoFsEJKkAtZCrC1r6CM8U22GzhG7u2Wir8ons/aCKH6MBdD1ibV24zOSSkdZVUKqN5i396zG5VKLYZ3yaUZdLA==}
@@ -900,12 +867,6 @@ packages:
     peerDependencies:
       react: ^19.0.0
 
-  react-toastify@11.0.3:
-    resolution: {integrity: sha512-cbPtHJPfc0sGqVwozBwaTrTu1ogB9+BLLjd4dDXd863qYLj7DGrQ2sg5RAChjFUB4yc3w8iXOtWcJqPK/6xqRQ==}
-    peerDependencies:
-      react: ^18 || ^19
-      react-dom: ^18 || ^19
-
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
@@ -1308,21 +1269,6 @@ snapshots:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.4.17
 
-  '@tanstack/query-core@5.65.0': {}
-
-  '@tanstack/query-devtools@5.65.0': {}
-
-  '@tanstack/react-query-devtools@5.65.1(@tanstack/react-query@5.65.1(react@19.0.0))(react@19.0.0)':
-    dependencies:
-      '@tanstack/query-devtools': 5.65.0
-      '@tanstack/react-query': 5.65.1(react@19.0.0)
-      react: 19.0.0
-
-  '@tanstack/react-query@5.65.1(react@19.0.0)':
-    dependencies:
-      '@tanstack/query-core': 5.65.0
-      react: 19.0.0
-
   '@types/bcrypt@5.0.2':
     dependencies:
       '@types/node': 22.10.7
@@ -1336,13 +1282,6 @@ snapshots:
   '@types/react-dom@19.0.3(@types/react@19.0.7)':
     dependencies:
       '@types/react': 19.0.7
-
-  '@types/react-toastify@4.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
-    dependencies:
-      react-toastify: 11.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-    transitivePeerDependencies:
-      - react
-      - react-dom
 
   '@types/react@19.0.7':
     dependencies:
@@ -1832,12 +1771,6 @@ snapshots:
     dependencies:
       react: 19.0.0
       scheduler: 0.25.0
-
-  react-toastify@11.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
-    dependencies:
-      clsx: 2.1.1
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
 
   react@19.0.0: {}
 
